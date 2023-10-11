@@ -1,0 +1,18 @@
+/* Set the background image and size for the .App element */
+.App {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh; /* 100% of the viewport height */
+}
+
+/* Set the height of the entire document to 100% to ensure the background covers the entire screen */
+html, body {
+  background-image: url('https://wallpapercave.com/wp/wp7566460.jpg');
+  height: 100%;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

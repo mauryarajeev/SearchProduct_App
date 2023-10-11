@@ -1,0 +1,140 @@
+/* ProductList.css */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Add margin between cards */
+   
+  }
+  
+  .product-card {
+    border: 1px solid #ccc; /* Add border to cards */
+    padding: 20px; /* Add padding to cards */
+    transition: transform 0.2s ease-in-out; /* Add animation effect on hover */
+    height: 100%;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05); /* Scale up the card on hover */
+  }
+  
+  /* Remove bottom margin (gap) from the last row of cards */
+  .product-card:nth-child(3n) /* Adjust the value based on the number of columns */
+  {
+    margin-bottom: 0;
+  }
+  
+  /* Make the layout responsive */
+  @media (max-width: 768px) {
+    .product-list {
+      grid-template-columns: repeat(2, 1fr); /* Display 2 cards in a row on smaller screens */
+    }
+  }
+
+
+  /* CSS in a separate .css file or in your .css module */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:grey;
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 60%;
+    margin: 15%;
+    margin-bottom: 3%;
+    margin-left: 20%;
+    margin-top: 5%;
+   
+ 
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+  }
+  
+  i.fas.fa-search {
+    font-size: 20px;
+    /* color: #333; */
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Style the search bar on focus */
+  input[type="text"]:focus {
+    background-color: #fff;
+    /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); */
+  }
+  
+  
+
+  
+  /* ProductList.css */
+
+/* Style for the modal overlay */
+.modal {
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.5);
+    /* background:transparent; */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style for the modal content */
+  .modal-content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 80%;
+    overflow-y: auto;
+  }
+  
+  /* Style for the close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Style for the product cards within the modal */
+  .product-card {
+    width: 200px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+    margin-bottom: 80px; /* Add margin between cards */
+    padding: 10px; /* Add padding within cards */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  /* Add other styles for product card elements as needed */
+  .product-card img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+ 
+  
+  .star-icon {
+    color: gray; /* Default color for unfilled stars */
+  }
+  
+  .star-icon.filled {
+    color: red; /* Color for filled stars */
+  }
+  
+  li{
+    color: white;
+  }
